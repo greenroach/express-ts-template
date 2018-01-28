@@ -14,8 +14,6 @@ git clone https://github.com/greenroach/express-ts-template.git
 cd <project_name>
 npm install
 ```
-
-```
 - Build and run the project
 ```
 npm run build
