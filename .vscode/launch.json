@@ -10,6 +10,23 @@
             "name": "Attach by Process ID",
             "processId": "${command:PickProcess}",
             "protocol": "inspector"
-        }
+        },
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "address": "localhost",
+            "restart": true,
+            "sourceMaps": true,
+            "outFiles": ["${workspaceRoot}/src"],
+            "skipFiles": [
+                "${workspaceFolder}/app/node_modules/**/*.js"
+            ],
+            "localRoot": "${workspaceRoot}/src",
+            "remoteRoot": "${workspaceRoot}/src",
+            "smartStep": true,
+            "trace": true
+        },
     ]
 }
