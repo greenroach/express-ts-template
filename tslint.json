@@ -1,67 +1,17 @@
 {
-	"extends": "tslint:recommended",
-	"rules": {
-		"max-line-length": {
-			"options": [120]
-		},
-		"indent": [true, "tabs"],
-		"variable-name": [
-			true,
-			"ban-keywords",
-			"check-format",
-			"allow-leading-underscore"
-		],
-		"no-namespace": false,
-		"new-parens": true,
-		"no-arg": true,
-		"no-bitwise": true,
-		"ordered-imports": false,
-		"no-conditional-assignment": true,
-		"no-consecutive-blank-lines": [true, 1],
-		"object-literal-sort-keys": false,
-		"no-console": [false, "log", "error"],
-		"space-before-function-paren": true,
-		"member-ordering": [
-			true, {
-				"order": [
-					"public-static-field",
-					"protected-static-field",
-					"private-static-field",
-
-					"public-instance-field",
-					"protected-instance-field",
-					"private-instance-field",
-
-					"public-constructor",
-					"protected-constructor",
-					"private-constructor",
-
-					"public-instance-method",
-					"protected-instance-method",
-					"private-instance-method",
-
-					"public-static-method",
-					"protected-static-method",
-					"private-static-method"
-				]
-			}
-		],
-		"typedef-whitespace": [
-			true,
-			{
-				"call-signature": "nospace",
-				"index-signature": "nospace",
-				"parameter": "nospace",
-				"property-declaration": "nospace",
-				"variable-declaration": "nospace"
-			},
-			{
-				"call-signature": "onespace",
-				"index-signature": "onespace",
-				"parameter": "onespace",
-				"property-declaration": "onespace",
-				"variable-declaration": "onespace"
-			}
-		]
-	}
+    "extends": "tslint:recommended",
+    "rules": {
+        "no-console": false,
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore"
+        ]
+    },
+    "linterOptions": {
+        "exclude": [
+            
+        ]
+    }
 }
