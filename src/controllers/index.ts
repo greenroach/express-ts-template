@@ -4,6 +4,6 @@ import { Request, Response } from "express";
  * GET /
  * Home page.
  */
-export let index = async (req: Request, res: Response) => {
+export const index = async (req: Request, res: Response): Promise<void> => {
     res.render("index", { title: "Express" });
 };
