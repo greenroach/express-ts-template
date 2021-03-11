@@ -24,6 +24,7 @@ jobs:
       - run: yarn build
       - run: yarn lint
       - run: yarn validate-prettiness
+      - run: yarn test
 workflows:
   version: 2
   test:
