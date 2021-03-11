@@ -1,6 +1,6 @@
 {
     "name": "express-ts-template",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Simple starter template for ExpressJs and TypeScript based on expressjs/generator and TypeScript-Node-Starter",
     "main": "server.js",
     "scripts": {
