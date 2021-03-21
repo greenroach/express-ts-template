@@ -1,2 +1,4 @@
 semi: true
 trailingComma: all
+tabWidth: 4
+arrowParens: avoid
