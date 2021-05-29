@@ -21,10 +21,22 @@ jobs:
             - node_modules
             - ~/.cache/yarn
           key: v2-dependencies-{{ checksum "yarn.lock" }}
-      - run: yarn build
-      - run: yarn lint
-      - run: yarn validate-prettiness
-      - run: yarn test
+      - run:
+          name: Build
+          command: yarn build
+      - run:
+          name: Check linting
+          command: yarn lint
+      - run:
+          name: Validate prettiness
+          command: yarn validate-prettiness
+      - run:
+          name: Run unit tests
+          command: yarn test
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
 workflows:
   version: 2
   test:
