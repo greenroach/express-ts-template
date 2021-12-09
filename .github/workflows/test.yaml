@@ -1,0 +1,26 @@
+name: Intergation testing
+
+on:
+  pull_requests:
+    branches:
+      - '*'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Setup node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - run: npm ci
+    - run: npm build
+    - run: npm run test
+    - run: npm run check:lint
+    - run: npm run check:type
+    - run: npm run check:fmt
+
+      
