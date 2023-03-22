@@ -44,7 +44,7 @@
         "eslint-config-prettier": "8.8.0",
         "eslint-plugin-import": "2.27.5",
         "jest": "26.6.3",
-        "nodemon": "2.0.21",
+        "nodemon": "2.0.22",
         "prettier": "2.8.6",
         "supertest": "6.3.3",
         "ts-jest": "26.5.6",
