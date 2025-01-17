@@ -18,7 +18,7 @@
         "serve-debug": "nodemon --inspect dist/server.js",
         "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\"",
         "typecheck": "tsc --noEmit",
-        "run-prettier": "prettier src/*.ts",
+        "run-prettier": "prettier 'src/**/*.ts'",
         "validate-prettiness": "yarn run-prettier -c",
         "make-prettier": "yarn run-prettier --write"
     },
